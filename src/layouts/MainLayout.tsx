@@ -68,7 +68,7 @@ const MainLayout = () => {
               {/* Resize handle */}
               <div
                 className="absolute top-0 right-0 w-1 h-full cursor-col-resize hover:bg-blue-500"
-                onMouseDown={(e) => handleResize(e, e.clientX)}
+                onMouseDown={handleResize}
               />
             </motion.div>
           </>
