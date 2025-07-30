@@ -12,7 +12,7 @@ const MainLayout = () => {
   const [sidebarWidth, setSidebarWidth] = useState(250);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const handleResize = (e: React.MouseEvent, startX: number) => {
+  const handleResize = () => {
     const onMouseMove = (e: MouseEvent) => {
       const newWidth = Math.max(200, Math.min(400, e.clientX));
       setSidebarWidth(newWidth);
